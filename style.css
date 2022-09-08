@@ -1,0 +1,287 @@
+* {
+    font-family: 'Lato', sans-serif;
+    color: rgba(70, 70, 70);
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #4F518C;
+    line-height: 40px;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 30px;
+    color: ivory;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+hr {
+    border: 0.5px solid #DABFFF;
+}
+
+ul, li {
+    margin-left: 0; 
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (max-width: 800px) {
+    h3 {
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header-area {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #fff;
+}
+
+.main-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.main-logo img {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.navigation li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.social-media-area {
+    display: flex;
+}
+
+.fb, .ig {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+.main-image {
+    display: sticky;
+    height: 90vh;
+    background-image: url(https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.subtitle-area {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle{
+    max-width: 850px;
+    height: 200px;
+    text-align: center;
+}
+
+.main-content-area {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-content {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text {
+    width: 300px;
+    height: 240px;
+}
+
+.main-pic {
+    width: 240px;
+    height: 240px;
+}
+
+.main-pic img {
+    height: 100%;
+    width: auto;
+}
+
+
+.break-pic {
+    height: 350px;
+    background-image: url(https://images.unsplash.com/photo-1654793182455-83e2a50f3494?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 50px;
+}
+
+.contact {
+    max-width: 850px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px #4F518C solid;
+}
+
+input:focus {
+    border: 1px #907AD6 solid;
+}
+
+textarea {
+    height: 100px;
+    width: 630px;
+    border-radius: 10px;
+    border: 1px #4F518C solid;
+    padding: 10px;
+}
+
+textarea:focus {
+    border: 1px #907AD6 solid;
+}
+
+.firstname, .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-btn {
+    width: 80px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px #4F518C solid;
+}
+
+.contact-btn:active {
+    border: 1px #907AD6 solid;
+}
+
+.footer-area {
+    height: 350px;
+    background-image: url(file:///Users/claire/Desktop/project4_landingPage/resource/footer-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 80px 50px;
+}
+
+
+.footer-option ul {
+    width: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: ivory;
+}
+
+.footer-option li {
+    margin: 10px 0px;  
+}
+
+.footer-option a {
+    text-decoration: none;
+    cursor: pointer;
+    color: ivory;
+    font-size: 14px;
+}
+
+.footer-option a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-area p {
+    color: ivory;
+    font-size: 12px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 75px;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.copyright {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+}
