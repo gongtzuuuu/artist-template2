@@ -230,7 +230,7 @@ textarea:focus {
 
 .footer-area {
     height: 350px;
-    background-image: url(file:///Users/claire/Desktop/project4_landingPage/resource/footer-pic.jpg);
+    background-image: url(resource/footer-pic.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
