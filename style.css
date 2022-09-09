@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+/*  GENERAL SETTING */
+/*  GENERAL SETTING */
+
 html,
 body {
     position: relative;
@@ -17,6 +20,13 @@ h3 {
     font-size: 28px;
     font-weight: 400;
     color: #4F518C;
+    line-height: 40px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+    color: ivory;
     line-height: 40px;
 }
 
@@ -61,6 +71,9 @@ a {
     text-decoration: none;
 }
 
+/*NAVIGATION*/
+/*NAVIGATION*/
+
 .main-header-area {
     width: 100%;
     position: fixed;
@@ -101,10 +114,13 @@ a {
     background-color: white;
 }
 
+/*INDEX BANNER*/
+/*INDEX BANNER*/
+
 .main-image {
     display: sticky;
     height: 90vh;
-    background-image: url(https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+    background-image: url(resource/main-pic.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -124,8 +140,66 @@ a {
     text-align: center;
 }
 
+/*INDEX BLOG LIST*/
+/*INDEX BLOG LIST*/
+
+.bloglist-index-area {
+    background-color: #907AD6;
+    padding: 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloglist-index-pic {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.bloglist-index-pic img {
+    width: 100%;
+}
+
+.bloglist-index-option {
+    padding: 0px 20px;
+}
+
+.bloglist-index h5 {
+    margin: 0px;
+}
+
+.bloglist-index a {
+    text-decoration: none;
+}
+
+.bloglist-index:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.time-tag, .blog-article-title {
+    display:inline-block;
+}
+
+.time-tag {
+    color: ivory;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+.bloglist-index-area a {
+    color: ivory;
+    font-weight: 900;
+}
+
+/*  PORTFOLIO */
+/*  PORTFOLIO */
+
 .main-content-area {
-    margin: 30px 0;
+    margin: 80px 0;
+    padding: 0px 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -156,14 +230,19 @@ a {
     width: auto;
 }
 
+/*BREAK PICTURE*/
+/*BREAK PICTURE*/
 
 .break-pic {
     height: 350px;
-    background-image: url(https://images.unsplash.com/photo-1654793182455-83e2a50f3494?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-image: url(resource/break-pic.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
+/*CONTACT*/
+/*CONTACT*/
 
 .contact-area {
     display: flex;
@@ -227,6 +306,9 @@ textarea:focus {
 .contact-btn:active {
     border: 1px #907AD6 solid;
 }
+
+/*FOOTER*/
+/*FOOTER*/
 
 .footer-area {
     height: 350px;
