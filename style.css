@@ -425,3 +425,43 @@ textarea:focus {
     width: 100%;
     height: auto;
 }
+
+.blog-article-area {
+    padding: 80px 50px;
+}
+
+.blog-article-pic {
+    margin-top: 50px;
+    height: 50vh;
+    width:100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.blog-article-pic img {
+    width: 100%;
+}
+
+.blog-article-title p {
+    margin: 0px;
+    color: #907AD6;
+}
+
+.blog-article-paragraph p {
+
+}
+
+.blog-article-button {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-article-button-option {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.blog-article-button-option li {
+    margin: 0px 20px;
+}
