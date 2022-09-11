@@ -1,5 +1,4 @@
 * {
-    border: 1px black solid;
     font-family: 'Lato', sans-serif;
     color: rgba(70, 70, 70);
     box-sizing: border-box;
@@ -308,6 +307,7 @@ div.bloglist-index:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 50px;
 }
 
@@ -456,9 +456,9 @@ textarea:focus {
     bottom: 0px;
 }
 
-@media screen and (max-screen:570px) {
+@media screen and (max-screen: 570px) {
     .footer-area {
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
