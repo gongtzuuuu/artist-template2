@@ -1,4 +1,5 @@
 * {
+    border: 1px black solid;
     font-family: 'Lato', sans-serif;
     color: rgba(70, 70, 70);
     box-sizing: border-box;
@@ -10,38 +11,53 @@
 html,
 body {
     position: relative;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     background-color: white;
 }
 
-h3 {
-    font-size: 28px;
-    font-weight: 400;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 5px 0px;
     color: #4F518C;
-    line-height: 40px;
+    line-height: 1.75;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: ivory;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: ivory;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 400;
-    color: ivory;
-    line-height: 40px;
 }
 
 h6 {
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 30px;
-    color: ivory;
-    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 hr {
@@ -57,19 +73,43 @@ li {
     list-style: none;
 }
 
-@media screen and (max-width: 800px) {
-    h3 {
-        font-size: 24px;
-    }
-
-    p{
-        font-size: 14px;
-    }
-}
-
 a {
     text-decoration: none;
 }
+
+/*
+.container {
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        width: 420px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .container {
+        width: 400px;
+    }
+}
+*/
 
 /*NAVIGATION*/
 /*NAVIGATION*/
@@ -115,6 +155,12 @@ a {
     background-color: white;
 }
 
+@media screen and (max-screen:800px) {
+    .header-tools {
+        display: none;
+    }
+}
+
 /*INDEX BANNER*/
 /*INDEX BANNER*/
 
@@ -128,17 +174,23 @@ a {
 }
 
 .subtitle-area {
-    height: 450px;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 80px 50px;
 }
 
 .subtitle{
     max-width: 850px;
-    height: 200px;
     text-align: center;
+}
+
+@media screen and (max-screen:500px) {
+    .subtitle-area {
+        height: 100%;
+    }
 }
 
 /*INDEX BLOG LIST*/
@@ -146,53 +198,60 @@ a {
 
 .bloglist-index-area {
     background-color: #907AD6;
-    padding: 100px 50px;
+    padding: 80px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+.bloglist-index {
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .bloglist-index-pic {
-    height: 400px;
     width: 400px;
+    height: 300px;
     overflow: hidden;
     border-radius: 20px;
+    margin: 20px;
 }
 
 .bloglist-index-pic img {
     width: 100%;
 }
 
-.bloglist-index-option {
-    padding: 0px 20px;
+.bloglist-index-option p, .bloglist-index-option h5 {
+    display:inline-block;
+    color: ivory;
+    margin: 5px;
 }
 
-.bloglist-index h5 {
-    margin: 0px;
+h5.bloglist-index-title {
+    font-weight: 900;
 }
 
-.bloglist-index a {
-    text-decoration: none;
-}
-
-.bloglist-index:hover {
+div.bloglist-index:hover {
     background-color: rgba(255,255,255,0.3);
 }
 
-.time-tag, .blog-article-title {
-    display:inline-block;
-}
-
-.time-tag {
-    color: ivory;
-    font-weight: 400;
-    margin: 15px;
-}
-
-.bloglist-index-area a {
-    color: ivory;
-    font-weight: 900;
+@media screen and (max-width: 1350px) {
+    .bloglist-index-option {
+        flex-direction: column;
+        width: 770px;
+    }
+    .bloglist-index-pic {
+        width: 770px;
+        height: 350px;
+        margin: 0px 0px 20px 0px;
+    }
+    .bloglist-index {
+        
+        display: flex;
+        flex-direction: column;
+    } 
 }
 
 /*  PORTFOLIO */
@@ -249,8 +308,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 90px 50px;
+    padding: 50px;
 }
 
 .contact {
@@ -259,6 +317,7 @@ a {
 }
 
 .options {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,6 +367,30 @@ textarea:focus {
     border: 1px #907AD6 solid;
 }
 
+@media screen and (max-width: 780px) {
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+    input, textarea, .contact-btn {
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        margin: 10px 0px 10px 0px;
+    }
+    .contact-btn {
+        width: 80px;
+        padding: 10px 16px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    input, textarea, .contact-btn {
+        width: 250px;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
 /*FOOTER*/
 /*FOOTER*/
 
@@ -325,6 +408,10 @@ textarea:focus {
     padding: 80px 50px;
 }
 
+.footer-option h6 {
+    color: ivory;
+    font-weight: 900;
+}
 
 .footer-option ul {
     width: 150px;
@@ -369,6 +456,19 @@ textarea:focus {
     bottom: 0px;
 }
 
+@media screen and (max-screen:570px) {
+    .footer-area {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    p.copyright {
+        font-size: 0.7 rem;
+    }
+}
+
 /*BLOG PAGE*/
 /*BLOG PAGE*/
 
@@ -385,33 +485,29 @@ textarea:focus {
 /*  BLOG ARTICLES */
 
 .blog-main-content-area {
-    margin: 80px 0;
-    padding: 0px 50px;
+    padding: 80px 50px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .blog-main-content {
-    margin: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .blog-main-content { 
+    margin: 20px;
     width: 300px;
     height: 400px;    
     text-align: center;
 }
 
-.blog-main-content h5 {
-    color: #4F518C;
+.blog-main-content h6 {
+    font-size: 1.4rem;
     font-weight: 900;
-    margin: 0px;
-    padding: 0px;
 }
 
 .blog-main-pic {
