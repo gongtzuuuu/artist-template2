@@ -262,9 +262,9 @@ a {
 }
 
 .bloglist-index {
-    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .bloglist-index-pic {
@@ -289,7 +289,7 @@ h5.bloglist-index-title {
     font-weight: 900;
 }
 
-div.bloglist-index:hover {
+a.bloglist-index:hover {
     background-color: rgba(255,255,255,0.3);
 }
 
