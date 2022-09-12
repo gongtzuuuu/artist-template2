@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A wee twig</title>
+    <base target="_self">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Comprehensive understanding of front-end development">
+    <meta name="author" content="Liz Liang">
 
     <!--STYLE SHEET-->
     <!--STYLE SHEET-->
@@ -14,8 +18,6 @@
     <!--PAGE SETTING-->
     <link rel="shortcut icon" href="resource/icon.png">
     <link rel="bookmark" href="resource/icon.png">
-
-
 </head>
 
 
@@ -23,11 +25,9 @@
     <!--NAVIGATION-->
     <!--NAVIGATION-->
     <div class="main-header-area">
-        <div class="main-logo">
-            <img src="resource/logo.png" alt="">
-        </div>
-        
-        <div class="header-tools">
+        <div class="clearfix">
+            <div class="main-logo"><img src="resource/logo.png" alt=""></div>
+            <a href="#" class="button-toggle"></a>
             <ul class="navigation">
                 <li><a href="index.html" target="_self">HOME</a></li>
                 <li><a href="#about" target="_self">ABOUT</a></li>
@@ -36,15 +36,13 @@
                 <li><a href="#contact" >CONTACT</a></li>
             </ul>
         </div>
-        <div class="social-media-area">
-            <div class="fb"></div>
-            <div class="ig"></div>
-        </div>
     </div>
+    <div id="booklist-home" class="fakeblock"></div>
+
 
     <!--INDEX BANNER-->
     <!--INDEX BANNER-->
-    <div id="" class="blog-main-image"></div>
+    <div class="blog-main-image"></div>
     <div id="about" class="subtitle-area">
         <div class="subtitle">
             <h1 class="subtitle-title">A comprehensive understanding of front-end development</h1>
@@ -123,36 +121,41 @@
             </div>
         </div>
     </div>
+
     <!--FOOTER-->
     <!--FOOTER-->
     <div class="footer-area">
-        <div class="footer-option footer-cata">
-            <h6>Catalogue</h6>
-            <ul>
-                <li><a href="">HTML</a></li>
-                <li><a href="">CSS</a></li>
-                <li><a href="">JavaScript</a></li>
-            </ul>
+        <div class="footer">
+            <div class="footer-option">
+                <h6>Catalogue</h6>
+                <ul>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                </ul>
+            </div>
+            <div class="footer-option">
+                <h6>Reference</h6>
+                <ul>
+                    <li><a href="">W3School</a></li>
+                    <li><a href="">MDN</a></li>
+                    <li><a href="">Other</a></li>
+                </ul>
+            </div>
+            <div class="footer-option">
+                <h6>Social Media</h6>
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Medium</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-option footer-ref">
-            <h6>Reference</h6>
-            <ul>
-                <li><a href="">W3School</a></li>
-                <li><a href="">MDN</a></li>
-                <li><a href="">Other</a></li>
-            </ul>
-        </div>
-        <div class="footer-option footer-soc">
-            <h6>Social Media</h6>
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Medium</a></li>
-                <li><a href="">LinkedIn</a></li>
-            </ul>
-        </div>
-        <div class="footer-goup">
-            <i class="fa-solid fa-arrow-up-from-line"></i>
+        
+        <div class="footer-logo">
+            <a href="#booklist-home"><img src="resource/vector.png" alt=""></a>
         </div>
         <p class="copyright">Copyright © 2022 A wee twig. All rights reserved.</p>
-    </div>
+    </div>    
 </body>
+</html>
