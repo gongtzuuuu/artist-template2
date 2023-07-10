@@ -1,1 +1,1 @@
-# artist-template1
+# artist-template2
